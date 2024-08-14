@@ -1,0 +1,278 @@
+/* Global styles */
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styles */
+.Container {
+  display: flex;
+  justify-content: center; /* Center the container horizontally */
+  padding: 20px; /* Add padding around the main container */
+  margin-top: 120px;
+}
+
+/* Main container with fixed width */
+.Container-main {
+  display: flex;
+  width: 1000px; /* Fixed width for desktop */
+  background-color: black; /* Background color of the main container */
+  border-radius: 10px;
+  border: 1px solid rgba(61, 63, 69, 0.474);
+  box-shadow: 0 4px 8px rgba(149, 149, 149, 0.2);
+}
+
+/* Left div styles */
+.left-div {
+ 
+  margin: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  color: white; /* Text color for the left box */
+  background-color:black; /* Background color of the left box */
+  border-radius: 10px; /* Rounded corners for the left box */
+  box-shadow: 0 4px 8px 3px rgba(184, 179, 179, 0.766); /* Shadow for the left box */
+  margin-right: 1px; /* Space between left and right divs */
+  width: 200px; /* Minimum width to ensure readability */
+  text-align: center;
+}
+
+.left-div img {
+  width: 70%; /* Make image responsive */
+  height: auto;
+  border-radius: 50%;
+}
+
+.Content-container p {
+  margin: 10px 0;
+  margin-left: 30px;
+  font-size: 10px;
+  text-align: left;
+}
+.expanded-container img{
+ 
+  margin: 2px;
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
+
+}
+.expanded-img-div{
+  display: flex;
+  flex-direction: row;
+ 
+}
+.expanded-img-div img{
+  margin-left: 2px;
+
+}
+.expanded-container footer{
+margin-left: 15px;
+ margin-top: 90px;
+}
+
+
+/* Right div styles */
+.right-div {
+  margin: 20px;
+  padding: 20px;
+  color: white; /* Text color for the right box */
+  background-color: black; /* Background color of the right box */
+  border-radius: 10px; /* Rounded corners for the right box */
+  box-shadow: 0 4px 8px 3px rgba(184, 179, 179, 0.766);/* Shadow for the right box */
+  min-width: 650px; /* Minimum width to ensure readability */
+  overflow-y: auto;
+}
+
+/* List styles */
+.right-div ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 350px;
+}
+
+.right-div li {
+  margin: 10px;
+  
+}
+
+.right-div a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+.right-div a:hover {
+  
+  background-color: hsla(224, 16%, 32%, 0.663);
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(122, 120, 120, 0.873);
+}
+
+#dynamic-text {
+  display: inline-block;
+  width: 150px; /* Adjust the width based on the longest text */
+  text-align: left; /* Align text to the left within the span */
+}
+h5 {
+  position: relative;
+  display: inline-block;
+  left: 380px; 
+}
+
+h5::after {
+  content: '';
+  position: absolute;
+  left: 50%; /* Start the underline in the middle of the text */
+  bottom: 0; /* Align it with the text */
+  transform: translateX(-50%); /* Center it horizontally */
+  width: 50%; /* Make the underline 50% of the text width */
+  height: 1.1px; /* Adjust the thickness */
+  background-color: currentColor; /* Match the underline color to the text color */
+}
+
+.text-container .skill-img {
+  border: 1px solid rgba(70, 66, 66, 0.703);
+  box-shadow: 0 4px 8px hsl(0, 2%, 63%);
+  width: 200px;
+  padding: 10px;
+  font-size: 7px;
+  text-align: center;
+  margin: 10px;
+  margin-left: 45px;
+}
+
+.text-container .skill-img img {
+  padding: 10px;
+  border-radius: 7px;
+  height: 100px;
+  width:150px;
+}
+
+.skill-img-main {
+  display: flex;
+  margin: 3px;
+  display: flex;
+  margin: 3px;
+}
+
+.skill-img-main p {
+  font-size: 10px;
+}
+.text-container {
+    margin: 20px;
+    color: white;
+    max-height: 600px; /* Adjust as needed */
+    overflow-y: auto; /* Add a scrollbar if content overflows */
+}
+.text-container .My-Content p {
+  padding: 20px;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .Container-main {
+      flex-direction: column; /* Stack left and right divs vertically */
+      width: 100%; /* Full width for mobile */
+  }
+
+  .left-div, .right-div {
+      width: 100%; /* Full width for each box */
+      margin: 0; /* Remove margin between boxes */
+      margin-bottom: 10px; /* Space between stacked boxes */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Maintain shadow */
+  }
+}
+.form-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-family: Arial, sans-serif;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 20px; /* Add padding for better spacing */
+  border-radius: 8px; /* Add some border-radius for a modern look */
+}
+
+.form-div h2 {
+  font-size: 2rem;
+  margin-bottom: 20px; /* Add margin below the title */
+}
+
+.form-div form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Make the form take full width */
+  max-width: 200px; /* Limit the max width */
+}
+
+.form-div form label {
+  margin: 2px 0; /* Add margin for spacing */
+  text-align: left;
+}
+
+.form-div form input {
+  padding: 8px;
+  margin-bottom: 2px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  
+}
+
+.form-div form button {
+  padding: 10px 5px;
+  font-size: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  width: 70px;
+  margin-left: 60px;
+}
+
+.form-div form button:hover {
+  background-color: #0056b3; /* Darken the button on hover */
+}
+.form-div .success-div h2{
+  color: green;
+  padding-top: 70px;
+  font-size: 20px;
+}
+.Home-div{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 10px;
+  color: white;
+  margin-left: 5px;
+  overflow-y: auto;
+  height: 100%;
+  max-height: 300px;
+  flex-wrap: wrap;
+}
+.Home-Main-Container{
+  
+   margin-top: 60px;
+}
+.Home-Main-Container button{
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.Home-Main-Container button:hover{
+  background-color: rgba(255, 255, 255, 0.686);
+}
