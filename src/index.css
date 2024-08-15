@@ -276,3 +276,24 @@ h5::after {
 .Home-Main-Container button:hover{
   background-color: rgba(255, 255, 255, 0.686);
 }
+.Certifi-div{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.certificate-content img{
+ width: 200px;
+}
+.web-content img{
+  height: 200px;
+  margin-left: 300px;
+  margin-top: 20px;
+}
+.web-content  h1{
+  margin-left: 320px;
+  margin-top: 20px;
+}
+.CCNA-div img{
+ width: 300px;
+ margin-top: 60px;
+}
